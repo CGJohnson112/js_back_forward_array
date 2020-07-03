@@ -3,10 +3,15 @@ const arrayBox = [
     "Hat",
     "Jat",
     "Bat",
-    "Drat"
+    "Drat",
+    "Nat",
+    "Prat",
+    "Kerat"
 ];
 
 let i = 0;
+
+
 
 //go backward in the array by one
 backArray = () => {
@@ -26,6 +31,14 @@ forwardArray = () => {
        i++;
    }
     document.getElementById("output").innerHTML = arrayBox[i];
+}
+
+addToArray = () => {
+    //arrayBox.push("Dog")
+    let newEntry = document.getElementById("input").value;
+    arrayBox.push(newEntry);
+    //alert(newEntry);
+   
 }
 
 
